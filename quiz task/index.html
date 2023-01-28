@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maths Game</title>
+
+  <script src="script.js">
+  </script>
+
+</head>
+<body>
+  <!-- All correct and all false audio files -->
+  <audio id="correctsound" src="correct.mp3"></audio>
+  <audio id="wrongsound" src="wrong.mp3"></audio>
+  
+  <h1>Maths Game</h1>
+
+  <form>
+    <!-- Input number of questions  -->
+    How many questions would you like to add?
+    <input id="nbq" type="text">
+    <button type="button" onclick="start()">Add</button><br>
+  </form>
+
+  <!-- Questions Section -->
+  <div id="questions"></div>
+
+  <button type="button" onclick="check()">Check Results</button>
+
+  <!-- Results Section -->
+  <div id="results"></div>
+
+  <!-- Bonus History Question -->
+  <form>
+    <p>When was I born? :)</p>
+    <input type="date" id="bonusAnswer"></input>
+    <button type="button" onclick="checkbonus()">Check Answer</button>
+  </form>
+  
+</body>
+</html>
